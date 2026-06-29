@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.pytest_cache/
+
+# Kivy / Buildozer
+.buildozer/
+bin/
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
