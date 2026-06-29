@@ -5,6 +5,7 @@ from pathlib import Path
 
 from kivy.app import App
 from kivy.clock import Clock
+from kivy.core.window import Window
 from kivy.graphics import Color, RoundedRectangle
 from kivy.metrics import dp
 from kivy.properties import ListProperty, NumericProperty
@@ -32,6 +33,8 @@ DARK_GRAY = (0.34, 0.34, 0.34, 1)
 TEXT = (0.08, 0.08, 0.08, 1)
 ERROR = (0.55, 0.05, 0.05, 1)
 OK = (0.05, 0.35, 0.08, 1)
+
+Window.clearcolor = WHITE
 
 
 class RoundedButton(Button):
@@ -145,7 +148,6 @@ class SetupScreen(RootScreen):
                 text=f"Игрок {i + 1}",
                 multiline=False,
                 hint_text=f"Имя игрока {i + 1}",
-                italic=True,
                 size_hint_y=None,
                 height=dp(44),
             )
@@ -156,7 +158,6 @@ class SetupScreen(RootScreen):
             text="БАЛДА",
             multiline=False,
             hint_text="Стартовое слово по длине поля",
-            italic=True,
             size_hint_y=None,
             height=dp(46),
         )
@@ -257,7 +258,6 @@ class SettingsScreen(RootScreen):
             hint_text="Минимальная длина слова",
             multiline=False,
             input_filter="int",
-            italic=True,
             size_hint_y=None,
             height=dp(46),
         )
