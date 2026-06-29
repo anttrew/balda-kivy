@@ -11,7 +11,7 @@ fullscreen = 0
 
 # Debug APK для ручной установки. Для Google Play позже нужен release/AAB и подпись.
 android.api = 35
-android.minapi = 23
+android.minapi = 24
 android.archs = arm64-v8a,armeabi-v7a
 android.accept_sdk_license = True
 
